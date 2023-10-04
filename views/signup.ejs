@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup</title>
+</head>
+<style>
+     *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    body{
+        /* backdrop-filter: blur(10px); */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        /* background-color: #242582; */
+        background-image:url("/images/gojoe.gif");
+        height: 100vh;
+        background-position: center;
+        background-size: cover;
+
+        /* background-color: white; */
+    }
+    .back{
+        height: 13cm;
+        width: 9cm;
+        background-color: rgba(0, 0, 0, 0.616);
+
+        border-radius: 8px;
+        box-shadow: rgba(255, 252, 252, 0.25) 0px 14px 28px, rgba(238, 237, 237, 0.22) 0px 10px 10px;
+    }
+    h1{
+        color: white;
+        text-align: center;
+        position: relative;
+        top: 1cm;
+    }
+  .in1{
+    height: 1.2cm;
+    width: 7cm;
+    position: relative;
+    top: 2.4cm;
+    left: 1cm;
+    text-align: center;
+    border-radius: 20px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.466);
+
+    /* border:2px solid white; */
+    outline: none;
+    border: none;
+    color: white;
+
+    
+   
+  }
+  .in2{
+    height: 1.2cm;
+    width: 7cm;
+    position: relative;
+    top: 2.4cm;
+    left: 1cm;
+    border-radius: 20px;
+    /* background-color: rgba(255, 255, 255, 0.466); */
+    background-color: rgba(0, 0, 0, 0.466);
+    /* border:2px solid white; */
+    border: none;
+    color: white;
+
+    outline: none;
+
+    margin-top: 0.8cm;
+    text-align: center;
+
+    
+
+  }
+  button{
+    position: relative;
+    top: 3.7cm;
+    /* right: 4cm; */
+    width: 2cm;
+    height: 0.8cm;
+    color: white;
+    background: black;
+    border-radius: 15px;
+    border:2px solid blue;
+    font-weight: 700;
+    left: 3.5cm;
+    transition: 0.4s;
+    text-align: center;
+  }
+  button:active{
+    scale:1.2;
+  }
+  hr{
+    width: 8cm;
+    position: relative;
+    top: 4.5cm;
+    left: 0.4cm;
+    height: 0.01;
+  }
+  span{
+    text-align: center;
+    color: white;
+    position: relative;
+    text-align: center;
+    top: 5.3cm;
+    font-size: 17px;
+    left: 1.2cm;
+  }
+  a{
+    color: white;
+    text-decoration: none;
+    background-color: rgb(255, 25, 186);
+    border: 1px solid rgb(255, 25, 186);
+    /* font-size: 16px; */
+    
+   
+    border-radius: 15px;
+    position: relative;
+    left: 3px;
+
+    padding-bottom: 3px;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+  input{
+    font-size: 16px;
+    color: black;
+    font-weight: 600;
+  }
+  ::placeholder{
+    color: white;
+  }
+</style>
+<body>
+
+    <div class="back">
+        <h1>SIGNUP</h1>
+        <form action="/signup" method="post">
+            <input type="text" name="username" placeholder="Username" class="in1">
+            <input type="text" name="password" placeholder="Password" class="in2">
+            <button type="submit">Signup</button>
+            <hr>
+<span>All Ready Have Account? <a href="/">login</a></span>
+
+            
+        </form>
+    </div>
+    
+</body>
+</html>
